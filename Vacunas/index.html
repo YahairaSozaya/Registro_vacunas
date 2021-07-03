@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema de vacunación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ventana_principal">
+        <h1>Esquema de Vacunación</h1>
+        <div id="contenedor1" class="contenedor1">
+            <div class="contenedor_vacunas">
+                <div class="nombre_vacuna uno"><p>BCG</p></div>
+                <div class="nombre_vacuna dos"><p>HEPATITIS A</p></div>
+                <div class="nombre_vacuna tres"><p>HEPATITIS B</p></div>
+                <div class="nombre_vacuna cuatro"><p>PENTAVALENTE ACELULAR</p></div>
+            </div>
+
+            <div class="vacunas">
+                <div class="row1 fila_vacuna"> 
+                    <p class="label">Dosis única</p>
+                    <input class="input" type="date">
+                </div> 
+
+                <div class="row2">
+                    <div class="fila_vacuna">
+                        <p class="label">Primera</p>
+                        <input class="input" type="date">
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Segunda</p>
+                        <input class="input" type="date">
+                    </div>
+                </div> 
+
+                <div class="row3">    
+                    <div class="fila_vacuna">
+                        <p class="label">Primera</p>
+                        <input class="input" type="date">
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Segunda</p>
+                        <input class="input" type="date">    
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Tercera</p>
+                        <input  class="input" type="date">
+                    </div>               
+                </div>
+
+                <div class="row4">
+                    <div class="fila_vacuna">
+                        <p class="label">Primera</p>
+                        <input class="input" type="date">
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Segunda</p>
+                        <input class="input" type="date">
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Tercera</p>
+                        <input class="input" type="date">
+                    </div>
+
+                    <div class="fila_vacuna">
+                        <p class="label">Cuarta</p>
+                        <input class="input" type="date">
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contenedor">
+            <div class="contenedor_vacunas2">
+                <div class="nombre_vacuna cinco"><p>INFLUENZA</p></div>
+            </div>
+
+            <div id="contenedor2" class="contenedor2">
+                <div class="fila_vacuna">
+                    <p class="label">Primera</p>
+                    <input class="input" type="date">
+                </div>
+
+                <div class="fila_vacuna">
+                    <p class="label">Refuerzo</p>
+                    <input class="input" type="date">
+                </div>
+            </div>  
+        </div>
+        <input id="anadir" class="boton_Anadir" type="submit" value="+">
+
+
+
+        <button class="guardar" id="guardar">Guardar</button>
+    
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

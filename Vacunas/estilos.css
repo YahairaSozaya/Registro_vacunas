@@ -1,0 +1,179 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(178, 204,227);
+    padding:50px;
+    font-family: "roboto", sans-serif;
+}
+
+p{
+    font-size: 12px;
+}
+
+.ventana_principal{
+    width: 1200px;
+    background: white;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding:100px;
+}
+
+.contenedor_vacunas{
+    display:grid;
+    grid-template-rows: repeat(4, 68px);
+    align-items: flex-end;
+    grid-gap:5px;
+    grid-template-columns: 300px;
+}
+
+.vacunas{
+    display:grid;
+    grid-template-rows: repeat(4, 68px);
+    align-items: center;
+    grid-gap:5px;
+}
+
+.nombre_vacuna{
+    width: 190px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.uno{
+    background: violet;
+}
+
+.dos{
+    background: rgb(101, 194, 78);
+}
+
+.tres{
+    background: rgb(59, 108, 243);
+}
+
+.cuatro{
+    background: rgb(243, 59, 188);
+}
+
+.cinco{
+    background: rgb(207, 167, 58);
+}
+
+
+.contenedor1{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.row1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: (2,1fr);
+    align-items: center;
+    grid-gap:0px;
+
+}
+
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.row3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.row4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.fila_vacuna{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    align-items: flex-end;
+    grid-gap:0px;
+    margin-right: 10px;
+}
+
+.fila_vacuna .label{
+    font-size: 10px;
+    margin:0px;
+}
+
+.fila_vacuna input{
+    background: rgb(238, 235, 238);
+    border-radius: 5px;
+    border:2px solid rgb(147, 211, 248);
+    padding:5px;
+}
+
+.fila_vacuna input:focus{
+    border:2px solid rgb(61, 153, 206);
+    outline: none;
+}
+
+.contenedor_vacunas2{
+    display:grid;
+    grid-template-rows: repeat(1, 68px);
+    align-items: flex-end;
+    grid-gap:5px;
+    grid-template-columns: 300px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.contenedor2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.boton_Anadir{
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    outline: none;
+    border-radius: 5px;
+    padding:0 10px 0 10px;
+    box-shadow: 1px 1px 10px rgb(109, 107, 107);
+    margin-top: 20px;
+    border:none;
+    background-image: url('./images/jeringuilla.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    color:rgb(117, 118, 119); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_Anadir:hover{
+    cursor:pointer;
+}
+
+.boton_Anadir:active{
+    transform: translateY(2px);
+}
+
+.guardar{
+    width: 150px;
+    height: 50px;
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin-top: 50px;
+}
